@@ -9,10 +9,10 @@ The software is deployed securely on the Google Apps Script serverless platform.
 ## ⚖️ Comparative Demonstration Setup (A/B Testing)
 To practically demonstrate the efficiency of our proposed AI-integrated system compared to traditional methods (as discussed in Section V of our paper), this demo features a dual-mode evaluation setup:
 
-### 1. Traditional Manual Mode (Staff Login)
+### 1. AI-Assisted Manual Mode (Staff Login)
 * **Username:** `staff01`
 * **Password:** `pass123`
-* **Purpose:** Log in here to experience the conventional manual process. Reviewers can type questions manually and test the real-time Bloom's tracking. This highlights the time-consuming nature, cognitive load, and difficulty of manually balancing the assessment rubrics without AI assistance.
+* **Purpose:** Log in here to experience the manual drafting process augmented by real-time AI classification. Reviewers can type a question manually and click the **"✨ Gemini AI"** button to test the system's NLP capabilities. The AI instantly parses the text and maps it to the exact Bloom's Taxonomy level (L1-L6). This highlights the intelligent cognitive tracking feature and the difficulty of manually balancing the assessment rubrics without full AI generation.
 
 ### 2. Proposed AI-Automated Mode (Admin Login)
 * **Admin ID:** `admin`
