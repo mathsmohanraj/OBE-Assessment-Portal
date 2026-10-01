@@ -12,7 +12,7 @@ To practically demonstrate the efficiency of our proposed AI-integrated system c
 ### 1. AI-Assisted Manual Mode (Staff Login)
 * **Username:** `staff01`
 * **Password:** `pass123`
-* **Purpose:** Log in here to experience the manual drafting process augmented by real-time AI classification. Reviewers can type a question manually and click the **"✨ Gemini AI"** button to test the system's NLP capabilities. The AI instantly parses the text and maps it to the exact Bloom's Taxonomy level (L1-L6). This highlights the intelligent cognitive tracking feature and the difficulty of manually balancing the assessment rubrics without full AI generation.
+* **Purpose:** Log in here to experience the manual drafting process augmented by real-time AI classification. Reviewers can type a question manually and click the **"✨ Gemini AI"** button to test the system's NLP capabilities. The AI instantly parses the text and maps it to the exact Bloom's Taxonomy level (L1-L6). This highlights the intelligent cognitive tracking feature.
 
 ### 2. Proposed AI-Automated Mode (Admin Login)
 * **Admin ID:** `admin`
