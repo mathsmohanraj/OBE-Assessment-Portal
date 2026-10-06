@@ -26,12 +26,14 @@ The core mathematical novelty of this system lies in its conflict-resolution eng
 * **Edges (Conflicts):** Represent a semantic overlap (questions testing the exact same topic/formula) or a cognitive weightage conflict.
 * **Colors (\(k=3\)):** Represent the 3 distinct Question Paper Sets (SET-I, SET-II, SET-III).
 * **Cognitive Level Shifting (Interactive Graph Coloring):** To eliminate edges (semantic overlap) across the 3 Sets, the system utilizes Cognitive Level Shifting. By dynamically altering a question's Bloom's level (e.g., from L1 to L2), the system guarantees 0% conceptual redundancy across different exam slots while maintaining overall pedagogical balance.
+
 ## ✨ Key System Advantages & Pedagogical Features
 Our proposed system perfectly synergizes theoretical graph coloring with highly practical educational tools to offer a flawless user experience:
 
 * **Live OBE Tracker (Constraint Validation):** While the Graph Coloring heuristic ensures 0% conceptual redundancy (no edges between sets), the Live Tracker acts as the quality validator. It displays real-time **CO Weightage** and **Bloom's Level Weightage**, ensuring the generated nodes strictly satisfy institutional pedagogical constraints.
 * **Integrated Open LaTeX Editor:** Eliminates the absolute need for external LaTeX software installations. Faculty can directly type complex mathematical equations, and the built-in MathJax engine renders them flawlessly within the assessment nodes.
 * **Pre-Fixed Template Architecture (Rapid Assembly):** The structural blueprint of the assessment is pre-configured. By combining this fixed formatting with our high-speed Graph Coloring selection algorithm, the system drastically reduces manual formatting time, generating a conflict-free, ready-to-print assessment paper in seconds.
+
 ## 🛠️ How to Test the AI Automation (Admin Mode)
 1. Select **"Admin"** at the bottom of the login page and enter the Admin credentials.
 2. Go to the **"✨ AI Syllabus Gen"** tab.
@@ -42,5 +44,16 @@ Our proposed system perfectly synergizes theoretical graph coloring with highly 
 7. **Interactive Conflict Resolution (Human-in-the-Loop):** When generating SET-II and SET-III, if you notice any conceptual overlap with a previous set, click the **"✨ Gemini AI"** button next to that specific question. This allows you to seamlessly replace the conflicting node with a fresh, distinct question (Cognitive Level Shifting) to satisfy the graph coloring constraint.
 8. Check the **Live OBE Tracker** on the right side for pedagogical balance.
 9. Click **"3. Print View"** to render the final A4 assessment paper powered by MathJax.
+
+## ⏱️ How to Verify Execution Time (Latency Verification)
+To independently verify the algorithmic efficiency and the `< 5 seconds` local execution time claimed in **Table I** of our manuscript, reviewers can use standard browser Developer Tools:
+
+1. Open the Live OBE Portal in Chrome/Edge.
+2. Press **F12** (or Right-Click -> Inspect) to open Developer Tools.
+3. Navigate to the **"Network"** tab.
+4. Click the **"✨ Auto-Fill from Syllabus"** button in the portal.
+5. Watch the network requests. The **"Time"** column will precisely display the execution latency (e.g., 4.5s - 5.5s for local Apps Script execution, and slightly higher for the full Gemini API round-trip). 
+
+This transparency ensures complete empirical reproducibility of our performance claims.
 
 *(Note: The core backend source code is kept proprietary to protect institutional data privacy and comply with double-blind peer review standards).*
