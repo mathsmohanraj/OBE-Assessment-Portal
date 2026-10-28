@@ -20,18 +20,18 @@ To practically demonstrate the efficiency of our proposed AI-integrated system c
 - **Purpose:** Log in here and click the **"✨ AI Syllabus Gen"** tab to test the core novelty of this research. By using the **"Auto-Fill from Syllabus"** feature, the Gemini API instantly parses the text, generates questions, and maps them to Bloom's levels. This demonstrates a massive reduction in manual drafting time and highlights the seamless Graph Coloring integration.
 
 ## 🧠 How Graph Theory (Coloring Heuristic) is Applied?
-The core mathematical novelty of this system lies in its conflict-resolution engine, based on a Greedy Graph Coloring heuristic (with Chromatic Number \(k=3\)):
+The core mathematical novelty of this system lies in its conflict-resolution engine, based on a Greedy Graph Coloring heuristic (with k = 3 exam slots):
 
 - **Vertices (Nodes):** Represent the surplus pool of AI-generated questions.
 - **Edges (Conflicts):** Represent a semantic overlap (questions testing the exact same topic/formula) or a cognitive weightage conflict.
-- **Colors (\(k=3\)):** Represent the 3 distinct Question Paper Sets (SET-I, SET-II, SET-III).
+- **Colors (k = 3):** Represent the 3 distinct Question Paper Sets (SET-I, SET-II, SET-III).
 - **Cognitive Level Shifting (Interactive Graph Coloring):** To eliminate edges (semantic overlap) across the 3 Sets, the system utilizes Cognitive Level Shifting. By dynamically altering a question's Bloom's level (e.g., from L1 to L2), the system guarantees 0% conceptual redundancy across different exam slots while maintaining overall pedagogical balance.
 
 ## ✨ Key System Advantages & Pedagogical Features
 Our proposed system perfectly synergizes theoretical graph coloring with highly practical educational tools to offer a flawless user experience:
 
 - **Live OBE Tracker (Constraint Validation):** While the Graph Coloring heuristic ensures 0% conceptual redundancy (no edges between sets), the Live Tracker acts as the quality validator. It displays real-time **CO Weightage** and **Bloom's Level Weightage**, ensuring the generated nodes strictly satisfy institutional pedagogical constraints.
-- **Integrated Open LaTeX Editor:** Eliminates the absolute need for external LaTeX software installations. Faculty can directly type complex mathematical equations, and the built-in MathJax engine renders them flawlessly within the assessment nodes.
+- **Integrated LaTeX/MathJax Editor:** Eliminates the absolute need for external LaTeX software installations. Faculty can directly type complex mathematical equations, and the built-in MathJax engine renders them flawlessly within the assessment nodes.
 - **Pre-Fixed Template Architecture (Rapid Assembly):** The structural blueprint of the assessment is pre-configured. By combining this fixed formatting with our high-speed Graph Coloring selection algorithm, the system drastically reduces manual formatting time, generating a conflict-free, ready-to-print assessment paper in seconds.
 
 ## 🛠️ How to Test the AI Automation (Admin Mode)
@@ -52,7 +52,7 @@ To independently verify the algorithmic efficiency and the `< 5 seconds` local e
 2. Press **F12** (or Right-Click -> Inspect) to open Developer Tools.
 3. Navigate to the **"Network"** tab.
 4. Click the **"✨ Auto-Fill from Syllabus"** button in the portal.
-5. Watch the network requests. The **"Time"** column will precisely display the execution latency (e.g., 4.5s - 5.5s for local Apps Script execution, and slightly higher for the full Gemini API round-trip). 
+5. Watch the network requests. The **"Time"** column will precisely display the execution latency (e.g., 4.5s - 5.5s for local Apps Script execution, and approximately 12.4s for the full Gemini API round-trip, as reported in the manuscript). 
 
 This transparency ensures complete empirical reproducibility of our performance claims.
 
@@ -90,4 +90,4 @@ Planar and Nonplanar Graphs - Euler Formula and its Consequences - K5 and K3,3 a
 
 > **💡 How to test:** Log in to the portal as Admin or an authorized Staff member, open the "✨ AI Syllabus Gen" tab, paste the above text in Step 1, select the target Bloom's levels, and click "✨ Auto-Fill Part A/B/C" to watch the Graph Coloring algorithm generate conflict-free questions in real-time.
 
-*(Note: The core backend source code is kept proprietary to protect institutional data privacy and comply with double-blind peer review standards).*
+*(Note: The core backend source code is kept proprietary to protect institutional data privacy.)*
