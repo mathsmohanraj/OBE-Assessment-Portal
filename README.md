@@ -10,29 +10,29 @@ The software is deployed securely on the Google Apps Script serverless platform.
 To practically demonstrate the efficiency of our proposed AI-integrated system compared to traditional methods (as discussed in Section V of our paper), this demo features a dual-mode evaluation setup:
 
 ### 1. AI-Assisted Manual Mode (Staff Login)
-* **Username:** `staff01`
-* **Password:** `pass123`
-* **Purpose:** Log in here to experience the manual drafting process augmented by real-time AI classification. Reviewers can type a question manually and click the **"✨ Gemini AI"** button to test the system's NLP capabilities. The AI instantly parses the text and maps it to the exact Bloom's Taxonomy level (L1-L6). This highlights the intelligent cognitive tracking feature.
+- **Username:** `staff01`
+- **Password:** `pass123`
+- **Purpose:** Log in here to experience the manual drafting process augmented by real-time AI classification. Reviewers can type a question manually and click the **"✨ Gemini AI"** button to test the system's NLP capabilities. The AI instantly parses the text and maps it to the exact Bloom's Taxonomy level (L1-L6). This highlights the intelligent cognitive tracking feature.
 
 ### 2. Proposed AI-Automated Mode (Admin Login)
-* **Admin ID:** `admin`
-* **Password:** `admin123`
-* **Purpose:** Log in here and click the **"✨ AI Syllabus Gen"** tab to test the core novelty of this research. By using the **"Auto-Fill from Syllabus"** feature, the Gemini API instantly parses the text, generates questions, and maps them to Bloom's levels. This demonstrates a massive reduction in manual drafting time and highlights the seamless Graph Coloring integration.
+- **Admin ID:** `admin`
+- **Password:** `admin123`
+- **Purpose:** Log in here and click the **"✨ AI Syllabus Gen"** tab to test the core novelty of this research. By using the **"Auto-Fill from Syllabus"** feature, the Gemini API instantly parses the text, generates questions, and maps them to Bloom's levels. This demonstrates a massive reduction in manual drafting time and highlights the seamless Graph Coloring integration.
 
 ## 🧠 How Graph Theory (Coloring Heuristic) is Applied?
 The core mathematical novelty of this system lies in its conflict-resolution engine, based on a Greedy Graph Coloring heuristic (with Chromatic Number \(k=3\)):
 
-* **Vertices (Nodes):** Represent the surplus pool of AI-generated questions.
-* **Edges (Conflicts):** Represent a semantic overlap (questions testing the exact same topic/formula) or a cognitive weightage conflict.
-* **Colors (\(k=3\)):** Represent the 3 distinct Question Paper Sets (SET-I, SET-II, SET-III).
-* **Cognitive Level Shifting (Interactive Graph Coloring):** To eliminate edges (semantic overlap) across the 3 Sets, the system utilizes Cognitive Level Shifting. By dynamically altering a question's Bloom's level (e.g., from L1 to L2), the system guarantees 0% conceptual redundancy across different exam slots while maintaining overall pedagogical balance.
+- **Vertices (Nodes):** Represent the surplus pool of AI-generated questions.
+- **Edges (Conflicts):** Represent a semantic overlap (questions testing the exact same topic/formula) or a cognitive weightage conflict.
+- **Colors (\(k=3\)):** Represent the 3 distinct Question Paper Sets (SET-I, SET-II, SET-III).
+- **Cognitive Level Shifting (Interactive Graph Coloring):** To eliminate edges (semantic overlap) across the 3 Sets, the system utilizes Cognitive Level Shifting. By dynamically altering a question's Bloom's level (e.g., from L1 to L2), the system guarantees 0% conceptual redundancy across different exam slots while maintaining overall pedagogical balance.
 
 ## ✨ Key System Advantages & Pedagogical Features
 Our proposed system perfectly synergizes theoretical graph coloring with highly practical educational tools to offer a flawless user experience:
 
-* **Live OBE Tracker (Constraint Validation):** While the Graph Coloring heuristic ensures 0% conceptual redundancy (no edges between sets), the Live Tracker acts as the quality validator. It displays real-time **CO Weightage** and **Bloom's Level Weightage**, ensuring the generated nodes strictly satisfy institutional pedagogical constraints.
-* **Integrated Open LaTeX Editor:** Eliminates the absolute need for external LaTeX software installations. Faculty can directly type complex mathematical equations, and the built-in MathJax engine renders them flawlessly within the assessment nodes.
-* **Pre-Fixed Template Architecture (Rapid Assembly):** The structural blueprint of the assessment is pre-configured. By combining this fixed formatting with our high-speed Graph Coloring selection algorithm, the system drastically reduces manual formatting time, generating a conflict-free, ready-to-print assessment paper in seconds.
+- **Live OBE Tracker (Constraint Validation):** While the Graph Coloring heuristic ensures 0% conceptual redundancy (no edges between sets), the Live Tracker acts as the quality validator. It displays real-time **CO Weightage** and **Bloom's Level Weightage**, ensuring the generated nodes strictly satisfy institutional pedagogical constraints.
+- **Integrated Open LaTeX Editor:** Eliminates the absolute need for external LaTeX software installations. Faculty can directly type complex mathematical equations, and the built-in MathJax engine renders them flawlessly within the assessment nodes.
+- **Pre-Fixed Template Architecture (Rapid Assembly):** The structural blueprint of the assessment is pre-configured. By combining this fixed formatting with our high-speed Graph Coloring selection algorithm, the system drastically reduces manual formatting time, generating a conflict-free, ready-to-print assessment paper in seconds.
 
 ## 🛠️ How to Test the AI Automation (Admin Mode)
 1. Select **"Admin"** at the bottom of the login page and enter the Admin credentials.
@@ -55,5 +55,39 @@ To independently verify the algorithmic efficiency and the `< 5 seconds` local e
 5. Watch the network requests. The **"Time"** column will precisely display the execution latency (e.g., 4.5s - 5.5s for local Apps Script execution, and slightly higher for the full Gemini API round-trip). 
 
 This transparency ensures complete empirical reproducibility of our performance claims.
+
+## 📊 Validation Artifacts (For Peer Review)
+
+To validate the automated generation capabilities, automated answer key formulation, and the structural integrity of the assessments, we have provided real-time sample artifacts in the `Validation_Proofs` directory of this repository:
+
+1. **`Demo_Syllabus.pdf`**: The raw syllabus input (Graph Theory) provided to the AI module.
+2. **`Generated_Question_Paper_Student_View.pdf`**: The final mathematically filtered, conflict-free question paper generated by the system.
+3. **`Generated_Question_Paper_Teacher_View.pdf`**: The same question paper inclusive of the **Automated Answer Keys** and evaluation points generated simultaneously by the LLM.
+
+These artifacts explicitly demonstrate the practical utility of the Graph Coloring heuristic in eliminating semantic overlap, and the system's ability to generate accurate evaluation points (Answer Keys) without human intervention.
+
+## 📝 Sample Data for Testing (AI Syllabus Generation)
+
+To test the **AI Syllabus Gen** and **Auto-Fill** features in the OBE Portal, you can copy and paste the following sample syllabus into the portal's text box:
+
+**Course Code:** YMA103
+**Course Name:** GRAPH THEORY (M.Sc Mathematics)
+
+**Unit 1: Basic Results**
+Basic Concepts - Subgraphs - Degrees of Vertices - Paths and Connectedness - Operations on Graphs - Directed Graphs: Basic Concepts - Tournaments.
+
+**Unit 2: Connectivity**
+Vertex Cuts and Edge Cuts - Connectivity and Edge Connectivity - Trees: Definitions, Characterization and Simple Properties - Counting the Number of Spanning Trees - Cayley's Formula.
+
+**Unit 3: Independent Sets and Matchings**
+Vertex Independent Sets and Vertex Coverings - Edge Independent Sets - Matchings and Factors - Eulerian Graphs - Hamiltonian Graphs.
+
+**Unit 4: Graph Colourings**
+Vertex Colouring - Critical Graphs - Triangle Free Graphs - Edge Colourings of Graphs - Chromatic Polynomials.
+
+**Unit 5: Planarity**
+Planar and Nonplanar Graphs - Euler Formula and its Consequences - K5 and K3,3 are Nonplanar Graphs - Dual of a Plane Graph - The Four-Colour Theorem and the Heawood Five-Colour Theorem - Kuratowski's Theorem.
+
+> **💡 How to test:** Log in to the portal as Admin or an authorized Staff member, open the "✨ AI Syllabus Gen" tab, paste the above text in Step 1, select the target Bloom's levels, and click "✨ Auto-Fill Part A/B/C" to watch the Graph Coloring algorithm generate conflict-free questions in real-time.
 
 *(Note: The core backend source code is kept proprietary to protect institutional data privacy and comply with double-blind peer review standards).*
